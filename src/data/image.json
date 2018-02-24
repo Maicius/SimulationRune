@@ -1,0 +1,7 @@
+{
+  "mnist_array":
+  {
+    "image": "../mnist/1.png",
+    "value": "1"
+  }
+}

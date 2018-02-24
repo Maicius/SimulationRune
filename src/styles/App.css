@@ -1,21 +1,35 @@
 /* Base Application Styles */
 body {
   color: #fff;
-  background: #222;
-}
-
-.index img {
-  margin: 40px auto;
-  border-radius: 4px;
   background: #fff;
-  display: block;
 }
 
-.index .notice {
-  margin: 20px auto;
-  padding: 15px 0;
+.rune {
+  position: relative;
+  background: #b5bcd6;
+  margin: 20vh auto;
+  width: 770px;
+  height: 355px;
+}
+
+.number {
+  position: absolute;
   text-align: center;
-  border: 1px solid #000;
-  border-width: 1px 0;
-  background: #666;
+  width: 555px;
+  height: 330px;
+  background: #070707;
+  margin: 12.5px 107.5px;
+}
+
+.number img {
+  position: relative;
+  border: solid #393939;
+  border-width: 14px 21.5px;
+  width: 140px;
+  height: 80px;
+  display: inline-block;
+}
+
+.margin-left1{
+  margin-left: 2.5px;
 }
