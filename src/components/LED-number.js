@@ -5,15 +5,20 @@
 
 require('styles/light.css');
 import React from 'react';
-class LEDNumber extends React.Component{
-  constructor(props){
+require('jquery');
+require('../third_packet/raphael');
+require('../third_packet/jquery.uled');
+
+class LEDNumber extends React.Component {
+  constructor(props) {
     super(props)
   }
 
-  render(){
-    return(
+  render() {
+    return (
       <div className="led-number">
-        <div className="digit-number"/>
+        <div className="digit-number" id="led1">
+        </div>
         <div className="digit-number"/>
         <div className="digit-number"/>
         <div className="digit-number"/>
