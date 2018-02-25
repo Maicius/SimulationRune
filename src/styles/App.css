@@ -7,29 +7,36 @@ body {
 .rune {
   position: relative;
   background: #b5bcd6;
-  margin: 20vh auto;
-  width: 770px;
-  height: 355px;
+  margin: 10vh auto;
+  width: 1540px;
+  height: 830px;
 }
 
 .number {
   position: absolute;
   text-align: center;
-  width: 555px;
-  height: 330px;
+  width: 1110px;
+  height: 660px;
   background: #070707;
-  margin: 12.5px 107.5px;
+  margin: 25px 215px;
 }
 
 .number img {
   position: relative;
   border: solid #393939;
-  border-width: 14px 21.5px;
-  width: 140px;
-  height: 80px;
+  border-width: 29px 44px;
+  width: 280px;
+  height: 160px;
   display: inline-block;
 }
 
 .margin-left1{
-  margin-left: 2.5px;
+  margin-left: 2px;
+}
+.light-column {
+  position: absolute;
+  height: 710px;
+  width: 200px;
+  background: #acacac;
+  border: solid #020202;
 }

@@ -23,6 +23,8 @@ class AppComponent extends React.Component {
   render() {
     return (
       <div className="rune">
+        <div className="light-column">
+        </div>
         <div className="number">
           <img src={this.state.mnist_array.image}/>
           <img src={this.state.mnist_array.image} className="margin-left1"/>
@@ -33,6 +35,8 @@ class AppComponent extends React.Component {
           <img src={this.state.mnist_array.image}/>
           <img src={this.state.mnist_array.image} className="margin-left1"/>
           <img src={this.state.mnist_array.image} className="margin-left1"/>
+        </div>
+        <div className="light-column">1
         </div>
       </div>
     );
