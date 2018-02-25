@@ -1,0 +1,16 @@
+.light-column {
+  position: absolute;
+  height: 710px;
+  width: 200px;
+  background: #acacac;
+  border: solid #020202;
+}
+
+.score-board {
+  width: 140px;
+  height: 69.4px;
+  background: #979797;
+  border: solid #020202;
+  margin-left: 30.3px;
+  margin-top: 60.6px;
+}
