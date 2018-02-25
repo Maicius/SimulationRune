@@ -14,3 +14,26 @@
   margin-left: 30.3px;
   margin-top: 60.6px;
 }
+
+.led-number {
+  text-align: center;
+  position: relative;
+  width: 680px;
+  height: 162px;
+  background: #acb3cc;
+  border: solid #020202;
+  margin: 10px auto;
+}
+
+.digit-number {
+  position: relative;
+  background: #020202;
+  width: 91px;
+  height: 123px;
+  margin: 19.5px;
+  margin-left: 13px;
+  display: inline-block;
+}
+.margin-left10 {
+  margin-left: 13px;
+}

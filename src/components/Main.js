@@ -4,6 +4,7 @@ require('styles/App.css');
 import React from 'react';
 import LightColumn from '../components/light-column';
 import $ from 'jquery';
+import LEDNumber from '../components/LED-number';
 
 class AppComponent extends React.Component {
   constructor(props) {
@@ -24,6 +25,7 @@ class AppComponent extends React.Component {
   render() {
     return (
       <div className="rune">
+        <LEDNumber/>
         <LightColumn>
         </LightColumn>
         <div className="number">
