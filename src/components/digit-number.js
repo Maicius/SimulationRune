@@ -23,7 +23,7 @@ class DigitNumber extends React.Component {
         [1, 2, 3, 4, 5, 6, 7],
         [1, 2, 7, 3, 6]
       ],
-      digitNumber: [0, 0, 0, 0, 0]
+      digitNumber: [8, 8, 8, 8, 8]
     }
   }
 
@@ -31,7 +31,8 @@ class DigitNumber extends React.Component {
     const _seconds = document.querySelectorAll('.seconds');
     let digitNumbers = [];
     for (let i = 0; i < 5; i++) {
-      digitNumbers.push(Math.floor(Math.random() * 10))
+      //避免出现0
+      digitNumbers.push(Math.floor(Math.random() * 9) + 1)
     }
     this.setState(() => ({
       digitNumber: digitNumbers
