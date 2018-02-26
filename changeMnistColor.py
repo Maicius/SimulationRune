@@ -1,3 +1,5 @@
+# 用于将黑底白字的mnist数据集转换为白底黑字
+
 import cv2
 import numpy as np
 import os
