@@ -3,9 +3,7 @@
  */
 'use strict';
 
-require('styles/light.css');
 import React from 'react';
-
 class LEDNumber extends React.Component {
   constructor(props) {
     super(props)
