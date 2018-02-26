@@ -2,6 +2,8 @@
  * Created by maicius on 2018/2/26.
  */
 import React from 'react';
+import LEDNumber from '../components/LED-number'
+
 require('../styles/digit.css');
 
 class DigitNumber extends React.Component{
@@ -76,55 +78,11 @@ class DigitNumber extends React.Component{
   render(){
     return(
     <div className="led-number">
-      <div className="digit seconds">
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-      </div>
-
-      <div className="digit seconds">
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-      </div>
-
-      <div className="digit seconds">
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-      </div>
-
-      <div className="digit seconds">
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-      </div>
-
-      <div className="digit seconds">
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-        <div className="segment"/>
-      </div>
+      <LEDNumber/>
+      <LEDNumber/>
+      <LEDNumber/>
+      <LEDNumber/>
+      <LEDNumber/>
     </div>
     )
   }

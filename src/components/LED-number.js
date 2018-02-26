@@ -13,13 +13,14 @@ class LEDNumber extends React.Component {
 
   render() {
     return (
-      <div className="led-number">
-        <div className="digit-number" id="led1">
-        </div>
-        <div className="digit-number"/>
-        <div className="digit-number"/>
-        <div className="digit-number"/>
-        <div className="digit-number"/>
+      <div className="digit seconds">
+        <div className="segment"/>
+        <div className="segment"/>
+        <div className="segment"/>
+        <div className="segment"/>
+        <div className="segment"/>
+        <div className="segment"/>
+        <div className="segment"/>
       </div>
     )
   }
