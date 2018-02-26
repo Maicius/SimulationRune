@@ -42,7 +42,7 @@ class DigitNumber extends React.Component{
   };
 
   componentDidMount() {
-    this.interval = setInterval(() => this.updateNumber(), 5000);
+    this.interval = setInterval(() => this.updateNumber(), 1500);
   }
 
   componentWillUnmount() {
@@ -53,22 +53,22 @@ class DigitNumber extends React.Component{
     const that = this;
     let segments = digit.querySelectorAll('.segment');
     let current = parseInt(digit.getAttribute('data-value'));
-    if (!isNaN(current) && current !== number) {
+    if (!isNaN(current) && current != number) {
       // unset previous number
       that.state.digitSegments[current].forEach((digitSegment, index) => {
         setTimeout(function() {
           segments[digitSegment-1].classList.remove('on');
-        }, index*45)
+        }, index)
       });
     }
 
-    if (isNaN(current) || current !== number) {
+    if (isNaN(current) || current != number) {
       // set new number after
       setTimeout(function() {
         that.state.digitSegments[number].forEach((digitSegment, index) => {
           setTimeout(function() {
             segments[digitSegment-1].classList.add('on');
-          }, index*45)
+          }, index)
         });
       }, 50);
       digit.setAttribute('data-value', number);
