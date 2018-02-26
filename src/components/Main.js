@@ -3,7 +3,6 @@ require('styles/App.css');
 
 import React from 'react';
 import LightColumn from '../components/light-column';
-import $ from 'jquery';
 import LEDNumber from '../components/LED-number';
 
 class AppComponent extends React.Component {
