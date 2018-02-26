@@ -5,9 +5,6 @@
 
 require('styles/light.css');
 import React from 'react';
-require('jquery');
-require('../third_packet/raphael');
-require('../third_packet/jquery.uled');
 
 class LEDNumber extends React.Component {
   constructor(props) {
