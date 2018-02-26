@@ -1,44 +1,44 @@
 /**
  * Created by maicius on 2018/2/26.
+ * 顶部的LED数字逻辑控制
  */
 import React from 'react';
 import LEDNumber from '../components/LED-number'
 
 require('../styles/digit.css');
 
-class DigitNumber extends React.Component{
-  constructor(props){
+class DigitNumber extends React.Component {
+  constructor(props) {
     super(props);
-    this.state ={
-      digitSegments : [
-        [1,2,3,4,5,6],
-        [2,3],
-        [1,2,7,5,4],
-        [1,2,7,3,4],
-        [6,7,2,3],
-        [1,6,7,3,4],
-        [1,6,5,4,3,7],
-        [1,2,3],
-        [1,2,3,4,5,6,7],
-        [1,2,7,3,6]
+    this.state = {
+      digitSegments: [
+        [1, 2, 3, 4, 5, 6],
+        [2, 3],
+        [1, 2, 7, 5, 4],
+        [1, 2, 7, 3, 4],
+        [6, 7, 2, 3],
+        [1, 6, 7, 3, 4],
+        [1, 6, 5, 4, 3, 7],
+        [1, 2, 3],
+        [1, 2, 3, 4, 5, 6, 7],
+        [1, 2, 7, 3, 6]
       ],
       digitNumber: [0, 0, 0, 0, 0]
     }
   }
-  updateNumber(){
+
+  updateNumber() {
     const _seconds = document.querySelectorAll('.seconds');
     let digitNumbers = [];
-    for(let i =0; i< 5; i++){
-      digitNumbers.push(Math.floor(Math.random()*10))
+    for (let i = 0; i < 5; i++) {
+      digitNumbers.push(Math.floor(Math.random() * 10))
     }
     this.setState(() => ({
       digitNumber: digitNumbers
     }));
-    this.setNumber(_seconds[0], this.state.digitNumber[0]);
-    this.setNumber(_seconds[1], this.state.digitNumber[1]);
-    this.setNumber(_seconds[2], this.state.digitNumber[2]);
-    this.setNumber(_seconds[3], this.state.digitNumber[3]);
-    this.setNumber(_seconds[4], this.state.digitNumber[4]);
+    for (let i = 0; i < 5; i++) {
+      this.setNumber(_seconds[i], this.state.digitNumber[i]);
+    }
   }
 
   componentDidMount() {
@@ -49,7 +49,7 @@ class DigitNumber extends React.Component{
     clearInterval(this.interval);
   }
 
-  setNumber(digit, number){
+  setNumber(digit, number) {
     const that = this;
     let segments = digit.querySelectorAll('.segment');
     let current = parseInt(digit.getAttribute('data-value'));
@@ -57,7 +57,7 @@ class DigitNumber extends React.Component{
       // unset previous number
       that.state.digitSegments[current].forEach((digitSegment, index) => {
         setTimeout(() => {
-          segments[digitSegment-1].classList.remove('on');
+          segments[digitSegment - 1].classList.remove('on');
         }, index)
       });
     }
@@ -67,7 +67,7 @@ class DigitNumber extends React.Component{
       setTimeout(() => {
         that.state.digitSegments[number].forEach((digitSegment, index) => {
           setTimeout(() => {
-            segments[digitSegment-1].classList.add('on');
+            segments[digitSegment - 1].classList.add('on');
           }, index)
         });
       }, 50);
@@ -75,15 +75,15 @@ class DigitNumber extends React.Component{
     }
   }
 
-  render(){
-    return(
-    <div className="led-number">
-      <LEDNumber/>
-      <LEDNumber/>
-      <LEDNumber/>
-      <LEDNumber/>
-      <LEDNumber/>
-    </div>
+  render() {
+    return (
+      <div className="led-number">
+        <LEDNumber/>
+        <LEDNumber/>
+        <LEDNumber/>
+        <LEDNumber/>
+        <LEDNumber/>
+      </div>
     )
   }
 }

@@ -1,5 +1,6 @@
 /**
  * Created by maicius on 2018/2/25.
+ * 两侧的记分板
  */
 'use strict';
 

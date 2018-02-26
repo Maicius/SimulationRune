@@ -1,5 +1,6 @@
 /**
  * Created by maicius on 2018/2/25.
+ * 顶部的LED数字样式
  */
 'use strict';
 
