@@ -12,7 +12,7 @@ class AppComponent extends React.Component {
     super(props);
     this.state = {
       mnist_array: [],
-      led_array:[]
+      led_array: []
     };
     this.base_url = '../images/';
   }
@@ -55,15 +55,9 @@ class AppComponent extends React.Component {
         <DigitNumber/>
         <LightColumn/>
         <div className="number">
-          <img src={this.state.mnist_array[0]}/>
-          <img src={this.state.mnist_array[1]} className="margin-left1"/>
-          <img src={this.state.mnist_array[2]} className="margin-left1"/>
-          <img src={this.state.mnist_array[3]}/>
-          <img src={this.state.mnist_array[4]} className="margin-left1"/>
-          <img src={this.state.mnist_array[5]} className="margin-left1"/>
-          <img src={this.state.mnist_array[6]}/>
-          <img src={this.state.mnist_array[7]} className="margin-left1"/>
-          <img src={this.state.mnist_array[8]} className="margin-left1"/>
+          { this.state.mnist_array.map((mnist_pic) =>
+            <img src={mnist_pic} className="margin-left1"/>
+          )}
         </div>
         <div className="margin-left100">
           <LightColumn/>
