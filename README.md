@@ -18,4 +18,5 @@
 1. 配置node.js/npm/webpack（每种操作系统配置方法不一样，就不一一说明了，详细的百度就好）
 2. 在终端中进入本项目跟目录，输入指令：
       > npm install  
-        npm start 
+        npm start   
+        在浏览器地址栏中输入 localhost:8000
