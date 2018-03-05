@@ -5,6 +5,7 @@
 - 按照 1px: 1mm 的比例制作的基于网页的大符模拟程序，界面完全还原规则手册中的大符。可以方便的使用投影仪投影
 
 - 程序效果:
+![程序效果](https://github.com/Maicius/SimulationRune/blob/master/buff.png)
 
 - 实现功能：
 
